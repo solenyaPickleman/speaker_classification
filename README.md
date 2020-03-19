@@ -5,7 +5,7 @@ This method has been tested on two datasets :
   - VCTK (~44 total hours of audio)
   - Librispeech 360 - (~363 total hours of audio)
 using an Intel I7-7700k, 64GB RAM, and an NVIDIA 1080 w/ 8GB VRAM.
-
+```
 VCTK results:
   building training mfcc took :  127.95238304138184  seconds
   formatting labels took :  17.94165587425232  seconds
@@ -17,7 +17,8 @@ VCTK results:
   Accuracy:  0.9802237540965081
 
   real	5m7.434s
-
+```
+```
 Librispeech 360: 
   start building training mfcc
   building training mfcc took :  334.51354789733887  seconds
@@ -30,6 +31,7 @@ Librispeech 360:
   Accuracy:  0.9916358217564775
 
 real	14m45.168s
+```
 
 Limiting factors for scaling:
   - CPU limited on reading in wavs - more cores would speed up building the MFCC's 
